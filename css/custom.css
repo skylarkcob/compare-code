@@ -1769,7 +1769,7 @@ a.edd-wl-action.edd-wl-button .label {
 }
 
 .register-form .edd-submit {
-    
+    width: 100%;
     margin-top: .5rem
 }
 
@@ -1835,7 +1835,7 @@ a.edd-wl-action.edd-wl-button .label {
 }
 
 .v3 .pxf-post-slider .slider-nav .slick-slide img {
-    height: 100px;
+    height: 140px;
     margin-bottom: 10px;
 }
 
@@ -1965,4 +1965,20 @@ a.edd-wl-action.edd-wl-button .label {
 .center-title .hocwp-post h1,
 .pixel-dashboard .hocwp-post > h1 {
     text-align: center;
+}
+
+#edd-wl-modal #list-name,
+#edd-wl-modal #user-lists {
+    display: block;
+}
+
+#edd-wl-modal a.edd-wl-button .label,
+#edd-wl-modal a.edd-wl-button label,
+#edd-wl-modal a.edd-wl-button {
+    color: #333;
+    text-decoration: none;
+}
+
+#edd-wl-modal #edd-wl-modal-label {
+    margin-top: 0;
 }

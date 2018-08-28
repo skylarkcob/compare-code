@@ -36,7 +36,7 @@
 }
 
 .hocwp .media-content .media-download .download-link {
-    background-color: #808080;
+    background-color: #dedede;
     border: medium none;
     border-radius: 5px;
     color: #fff;
@@ -46,7 +46,6 @@
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-	border: 1px solid #808080;
 }
 
 .hocwp .media-content .media-download .download-link:hover {
@@ -55,9 +54,9 @@
 
 .hocwp .media-content .media-download .download-link.down-link:hover,
 .hocwp .media-content .media-download .download-link.down-link {
-    background-color: #8e151e;
-    
-    border: 1px solid #8e151e;
+    background-color: #a9e62f;
+    color: #3b7201;
+    border: 1px solid #98cf2a;
 }
 
 .hocwp .media-content .media-download .download-link:hover {
@@ -77,9 +76,9 @@
 
 .hocwp .media-content .media-download .download-link.more-link:hover,
 .hocwp .media-content .media-download .download-link.more-link {
-    background-color: #808080;
-    color: #ffffff;
-    border: 1px solid #808080;
+    background-color: #ffc2c3;
+    color: #7c5050;
+    border: 1px solid #e5aeaf;
 }
 
 .hocwp .media-content .media-info .description .media-download .download-link {
@@ -136,10 +135,10 @@
 
 .hocwp .media-content .font-demos .font-entry .font-display {
     display: block;
-    
+    font-size: 30px;
     height: 100%;
     overflow: hidden;
-    padding: 90px 20px 50px;
+    padding: 70px 20px 30px;
     position: relative;
     white-space: nowrap;
 }
@@ -149,7 +148,7 @@
 }
 
 .hocwp .media-content .font-demos .font-tester {
-    background: #f1f1f1 none repeat scroll 0 0;
+    background: #f8f8f8 none repeat scroll 0 0;
     border-radius: 4px;
     display: inline-table;
     padding: 15px 20px;

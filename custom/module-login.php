@@ -6,10 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $permalink = get_the_permalink();
 ?>
 <div id="edd_login_form_container" class="pixelify-login">
-    
 	<form id="edd_login_form" class="edd_form" action="" method="post">
-	
-	<h2><?php _e( 'Sign in', 'pixelify' ); ?></h2>
 		<?php
 		if ( isset( $_POST['edd_action'] ) && isset( $_POST['error'] ) ) {
 			$error = $_POST['error'];

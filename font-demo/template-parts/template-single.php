@@ -42,11 +42,11 @@
 		$count = absint( $count );
 		$media_download .= '<div class="media-download">';
 		$more_link = hocwp_get_post_meta( 'more_link', $post_id );
-		$donate_link = hocwp_get_post_meta( 'donate_link', $post_id );
 
 		$a = new HOCWP_HTML( 'a' );
 		$a->set_attribute( 'data-id', $post_id );
 		$a->add_class( 'download-link down-link' );
+		$a->set_attribute( 'data-download-id', $post_id );
 		$a->set_href( Pixelify()->get_virtual_download_url() );
 		$a->set_text( '<i class="fa fa-arrow-down" aria-hidden="true"></i> ' . __( 'Download', 'pixelify' ) . ' (' . $count . ')' );
 		$media_download .= $a->build();
@@ -57,14 +57,6 @@
 			$a->add_class( 'more-link' );
 			$media_download .= $a->build();
 		}
-		
-		if ( ! empty( $donate_link ) ) {
-			$a->set_href( $donate_link );
-			$a->set_text( '<i class="fa fa-external-link" aria-hidden="true"></i> ' . __( 'Donate', 'pixelify' ) );
-			$a->add_class( 'more-link' );
-			$media_download .= $a->build();
-		}
-		
 
 		ob_start();
 		?>
@@ -77,15 +69,19 @@
 		</a>
 		<?php
 		$media_download .= ob_get_clean();
-		
 
-		
-		
-		
-		
-		
+		$donate = get_post_meta( $post_id, 'donate', true );
 
-		
+		if ( empty( $donate ) ) {
+			$donate = get_user_meta( get_current_user_id(), 'donate', true );
+		}
+
+		$a = new HOCWP_HTML( 'a' );
+		$a->set_attribute( 'data-id', $post_id );
+		$a->add_class( 'download-link donate-link' );
+		$a->set_href( $donate );
+		$a->set_text( '<i class="fa fa-external-link" aria-hidden="true"></i> ' . __( 'Donate', 'pixelify' ) );
+		$media_download .= $a->build();
 
 		$media_download .= '</div>';
 	}
@@ -180,7 +176,7 @@
 				if ( has_term( '', 'designer' ) || ! empty( $license ) || ! empty( $com_lic ) || $author instanceof WP_User ) {
 					?>
 					<div class="post-group fontDesigner font">
-						<h2><?php _e( 'Font info', 'hocwp-theme' ); ?></h2>
+						<h2><?php _e( 'Font', 'hocwp-theme' ); ?></h2>
 						<table width="100%" cellspacing="0" cellpadding="0">
 							<tbody>
 							<?php

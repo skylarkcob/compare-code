@@ -326,7 +326,7 @@ jQuery(document).ready(function ($) {
             }
         });
 
-        $(".edd_free_downloads_form_class > .edd-free-download-single").on("click", function (e) {
+        $(".edd_free_downloads_form_class > .edd-free-download-single, .media-download > .down-link").on("click", function (e) {
             var element = $(this);
 
             $.ajax({

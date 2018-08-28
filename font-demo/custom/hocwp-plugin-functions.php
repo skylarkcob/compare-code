@@ -22,16 +22,16 @@ function hocwp_is_font_demo_post( $post_id = null ) {
 	if ( ! empty( $more_link ) ) {
 		return true;
 	}
-	
-	$donate_link = hocwp_get_post_meta( 'donate_link', $post_id );
-
-	if ( ! empty( $donate_link ) ) {
-		return true;
-	}
 
 	$download = hocwp_get_post_meta( 'download', $post_id );
 
 	if ( ! empty( $download ) ) {
+		return true;
+	}
+
+	$file_contents = get_post_meta( $post_id, 'file_contents', true );
+
+	if ( ! empty( $file_contents ) ) {
 		return true;
 	}
 

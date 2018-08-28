@@ -32,12 +32,6 @@ $args = array(
 $meta->add_field( $args );
 
 $args = array(
-	'id'    => 'donate_link',
-	'label' => 'Donate Link'
-);
-$meta->add_field( $args );
-
-$args = array(
 	'id'             => 'download_url',
 	'label'          => 'Download Url',
 	'field_callback' => 'hocwp_field_media_upload',

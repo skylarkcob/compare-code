@@ -24,9 +24,9 @@ jQuery(document).ready(function ($) {
             var $font_demos = $('.hocwp .media-content .font-demos'),
                 $list_fonts = $font_demos.find('.list-fonts');
             $font_size.slider({
-                min: 30,
-                max: 100,
-                value: 50,
+                min: 24,
+                max: 48,
+                value: 30,
                 slide: function (event, ui) {
                     $list_fonts.find('.font-display').css({fontSize: ui.value + 'px'});
                 }

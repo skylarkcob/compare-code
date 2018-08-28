@@ -216,7 +216,7 @@ class HOCWP_Pixelify extends HOCWP_Plugin_Core {
 		if ( has_term( '', 'designer' ) || ! empty( $license ) || ! empty( $com_lic ) || $author instanceof WP_User ) {
 			?>
 			<div class="post-group fontDesigner font">
-				<h2><?php _e( 'Font info', 'hocwp-theme' ); ?></h2>
+				<h2><?php _e( 'Font', 'hocwp-theme' ); ?></h2>
 				<table width="100%" cellspacing="0" cellpadding="0">
 					<tbody>
 					<?php
@@ -1154,6 +1154,12 @@ class HOCWP_Pixelify extends HOCWP_Plugin_Core {
 	}
 
 	public function get_virtual_download_url( $post_id = null ) {
+		$url = $this->get_download_url( $post_id );
+
+		if ( empty( $url ) ) {
+			return '';
+		}
+
 		$post_id = $this->get_current_post_id( $post_id );
 		$md5     = 'downfile/';
 		$md5 .= md5( get_the_title( $post_id ) );
@@ -1178,6 +1184,16 @@ class HOCWP_Pixelify extends HOCWP_Plugin_Core {
 				$download_url = $this->sanitize_media_value( $download_url );
 
 				$download_url = isset( $download_url['url'] ) ? $download_url['url'] : '';
+			}
+		}
+
+		if ( empty( $download_url ) ) {
+			$file_contents = get_post_meta( $post_id, 'file_contents', true );
+
+			if ( ! empty( $file_contents ) ) {
+				$file_contents = Pixelify()->sanitize_media_value( $file_contents );
+
+				$download_url = $file_contents['url'];
 			}
 		}
 

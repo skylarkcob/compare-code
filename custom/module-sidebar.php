@@ -84,31 +84,6 @@ if ( ! function_exists( 'wp_star_rating' ) ) {
 		</div>
 		<?php
 	}
-	
-	
-	$donate_link = get_post_meta( get_the_ID(), 'donate_link', true );
-
-	if ( ! empty( $donate_link ) ) {
-		?>
-		<div class="media-content">
-			<div class="media-info">
-				<div class="details visible">
-					<div class="media-download">
-						<?php
-						$a = new HOCWP_HTML( 'a' );
-						$a->set_href( $donate_link );
-						$a->set_text( __( 'Check out more', 'pixelify' ) );
-						$a->add_class( 'more-link' );
-						$a->output();
-						?>
-					</div>
-				</div>
-			</div>
-		</div>
-		<?php
-	}
-	
-	
 	?>
 	<div class="sidebar-social-share text-center">
 		<p class="text-center"><?php _e( 'Credit the author by sharing. Thanks!', 'pixelify' ); ?></p>

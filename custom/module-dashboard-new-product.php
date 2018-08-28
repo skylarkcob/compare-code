@@ -58,7 +58,6 @@ $post_title      = isset( $_POST['post_title'] ) ? $_POST['post_title'] : '';
 $post_content    = isset( $_POST['post_content'] ) ? $_POST['post_content'] : '';
 $download_tag    = isset( $_POST['download_tag'] ) ? $_POST['download_tag'] : '';
 $checkout_url    = isset( $_POST['checkout_url'] ) ? $_POST['checkout_url'] : '';
-$donate_url    = isset( $_POST['donate_url'] ) ? $_POST['donate_url'] : '';
 $license_options = isset( $_POST['license_options'] ) ? $_POST['license_options'] : '';
 
 $ffcu = __( 'Free for Commercial Use', 'pixelify' );
@@ -96,7 +95,6 @@ if ( $edit && ! isset( $_POST['create_post'] ) ) {
 	}
 
 	$checkout_url = get_post_meta( $post_id, 'more_link', true );
-	$donate_url = get_post_meta( $post_id, 'donate_link', true );
 }
 ?>
 <div id="fes-vendor-dashboard" class="fes-vendor-dashboard">
@@ -270,7 +268,6 @@ if ( $edit && ! isset( $_POST['create_post'] ) ) {
 				update_post_meta( $id, 'license1', $license1 );
 				update_post_meta( $id, 'license2', $license2 );
 				update_post_meta( $id, 'more_link', $checkout_url );
-				update_post_meta( $id, 'donate_link', $donate_url );
 
 				if ( HP()->is_positive_number( $download ) ) {
 					update_post_meta( $id, 'download', $download );
@@ -637,21 +634,11 @@ if ( $edit && ! isset( $_POST['create_post'] ) ) {
 				<div class="fes-el checkout-url download_tag">
 					<div class="fes-label">
 						<label
-							for="checkout_url"><?php _e( 'Link to your products or font store', 'pixelify' ); ?></label>
+							for="checkout_url"><?php _e( 'Check Out More', 'pixelify' ); ?></label>
 					</div>
 					<div class="fes-fields">
 						<input class="textfield" id="checkout_url" type="text" data-type="text"
 						       name="checkout_url" value="<?php echo $checkout_url; ?>" autocomplete="off">
-					</div>
-				</div>
-				<div class="fes-el donate-url download_tag">
-					<div class="fes-label">
-						<label
-							for="donate_url"><?php _e( 'Your PayPal.Me link', 'pixelify' ); ?></label>
-					</div>
-					<div class="fes-fields">
-						<input class="textfield" id="donate_url" type="text" data-type="text"
-						       name="donate_url" value="<?php echo $donate_url; ?>" autocomplete="off">
 					</div>
 				</div>
 				<div class="fes-el radio license_options">
