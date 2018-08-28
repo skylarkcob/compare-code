@@ -1,0 +1,652 @@
+# Copyright (C) 2018 Automattic
+# This file is distributed under the same license as the WooCommerce package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Auto Add Post\n"
+"Report-Msgid-Bugs-To: https://github.com/woocommerce/woocommerce/issues\n"
+"POT-Creation-Date: 2018-06-05 19:56+0700\n"
+"PO-Revision-Date: 2018-06-05 20:14+0700\n"
+"Last-Translator: \n"
+"Language-Team: HocWP Team\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: custom/admin-add-vip-user.php:28 custom/admin.php:23
+msgid "Add VIP User"
+msgstr "Thêm tài khoản VIP"
+
+#: custom/admin-add-vip-user.php:74
+#, php-format
+msgid ""
+"Cannot remove user ID <strong>%s</strong> from package <strong>%s</strong>!"
+msgstr ""
+"Không thể xóa ID người dùng <strong>%s</strong> từ gói <strong>%s</strong>!"
+
+#: custom/admin-add-vip-user.php:80
+#, php-format
+msgid "Cannot add user ID <strong>%s</strong> to package <strong>%s</strong>!"
+msgstr ""
+"Không thể thêm ID người dùng <strong>%s</strong> vào gói <strong>%s</strong>!"
+
+#: custom/admin-add-vip-user.php:89
+msgid "All VIP Users have been removed successfully!"
+msgstr "Tất cả tài khoản VIP đã được xóa thành công!"
+
+#: custom/admin-add-vip-user.php:95
+msgid "All Users have been added as VIP successfully!"
+msgstr "Tất cả người dùng đã được nâng cấp VIP thành công!"
+
+#: custom/admin-add-vip-user.php:107
+msgid "Users"
+msgstr "Người dùng"
+
+#: custom/admin-add-vip-user.php:127
+msgid "Check here if you want to select all users."
+msgstr "Nhấn vào đây nếu bạn muốn chọn tất cả người dùng."
+
+#: custom/admin-add-vip-user.php:134
+msgid "Expire In"
+msgstr "Hết hạn trong"
+
+#: custom/admin-add-vip-user.php:138 custom/admin.php:446 custom/admin.php:553
+msgid "days"
+msgstr "ngày"
+
+#: custom/admin-add-vip-user.php:143 custom/admin.php:558
+msgid "Packages"
+msgstr "Gói"
+
+#: custom/admin-add-vip-user.php:170 custom/admin.php:585
+msgid "Check here if you want to select all packages."
+msgstr "Nhấn vào đây nếu bạn muốn chọn tất cả các gói."
+
+#: custom/admin-add-vip-user.php:177 custom/admin.php:595
+msgid "Remove"
+msgstr "Xóa"
+
+#: custom/admin-add-vip-user.php:182 custom/admin.php:600
+msgid "Remove VIP users from packages?"
+msgstr "Xóa tài khoản VIP ra khỏi gói?"
+
+#: custom/admin-add-vip-user.php:188 custom/admin.php:609
+msgid "VIP Package"
+msgstr "Gói VIP"
+
+#: custom/admin-add-vip-user.php:192 custom/admin.php:453 custom/admin.php:613
+msgid "VIP"
+msgstr "VIP"
+
+#: custom/admin-add-vip-user.php:194 custom/admin.php:455 custom/admin.php:615
+msgid "Super VIP"
+msgstr "Super VIP"
+
+#: custom/admin-add-vip-user.php:201 custom/admin.php:460
+msgid "Submit"
+msgstr "Gửi"
+
+#: custom/admin-package-chosen.php:56
+msgid "Create post"
+msgstr "Tạo bài viết"
+
+#: custom/admin-package-chosen.php:61
+msgid "Update post"
+msgstr "Cập nhật bài viết"
+
+#: custom/admin-package-chosen.php:122
+msgid "Add More VIP Days"
+msgstr "Thêm ngày cho gói VIP"
+
+#: custom/admin-package-chosen.php:130
+#, php-format
+msgid "VIP user expire in %s."
+msgstr "Tài khoản VIP hết hạn trong %s."
+
+#: custom/admin-package-chosen.php:155
+msgid "VIP Expired"
+msgstr "Hết hạn VIP"
+
+#: custom/admin-package-chosen.php:158 custom/upgrade-vip.php:143
+msgid "Upgrade VIP"
+msgstr "Nâng cấp VIP"
+
+#: custom/admin-package-chosen.php:175
+msgid "You have not registered as VIP for this package."
+msgstr "Bạn chưa đăng ký VIP cho gói này."
+
+#: custom/admin-package-chosen.php:196
+msgid "Upgrade VIP for all packages"
+msgstr "Nâng cấp VIP cho tất cả các gói"
+
+#: custom/admin-vip-expirations.php:26
+msgid "Search Users"
+msgstr "Tìm người dùng"
+
+#: custom/admin.php:14 custom/admin.php:20 custom/post-type-and-taxonomy.php:13
+msgctxt "post package"
+msgid "Packages"
+msgstr "Gói"
+
+#: custom/admin.php:29 custom/post-type-and-taxonomy.php:58
+msgctxt "post type auto post"
+msgid "Posts"
+msgstr "Bài viết"
+
+#: custom/admin.php:35 custom/post-type-and-taxonomy.php:74
+msgctxt "website auto post"
+msgid "Sites"
+msgstr "Các trang"
+
+#: custom/admin.php:48
+msgid "VIP Expirations"
+msgstr "Ngày hết hạng VIP"
+
+#: custom/admin.php:318
+msgid ""
+"Your VIP package has expired, please recharge or contact admin to continue "
+"using the service. Thank you."
+msgstr ""
+"Gói VIP của bạn đã hết hạn, xin vui lòng nạp thêm tiền hoặc liên hệ với "
+"người quản trị để tiếp tục sử dụng dịch vụ. Cảm ơn."
+
+#: custom/admin.php:345
+#, php-format
+msgid ""
+"Your <strong>%s</strong> package has expired, please recharge or contact "
+"admin to continue using the service. Thank you."
+msgstr ""
+"Gói <strong>%s</strong> của bạn đã hết hạn, xin vui lòng nạp thêm tiền hoặc "
+"liên hệ với người quản trị để tiếp tục sử dụng dịch vụ. Cảm ơn."
+
+#: custom/admin.php:357
+#, php-format
+msgid "Your VIP account for package %s will be expired soon"
+msgstr "Tài khoản VIP của bạn cho gói %s sẽ sớm hết hạn"
+
+#: custom/admin.php:358 custom/ajax.php:77 custom/upgrade-vip.php:287
+#: custom/upgrade-vip.php:421
+#, php-format
+msgid "Dear %s,"
+msgstr "Chào bạn %s,"
+
+#: custom/admin.php:359
+#, php-format
+msgid ""
+"Your VIP account for package %s will be expired in %s. Please upgrade your "
+"account now."
+msgstr ""
+"Tài khoản VIP của bạn cho gói %s sẽ hết hạn trong %s. Xin vui lòng nâng cấp "
+"tài khoản của bạn ngay bây giờ."
+
+#: custom/admin.php:360 custom/ajax.php:79 custom/upgrade-vip.php:294
+#: custom/upgrade-vip.php:312 custom/upgrade-vip.php:423
+msgid "Thank you."
+msgstr "Cảm ơn."
+
+#: custom/admin.php:422
+msgid "Add user to this package"
+msgstr "Thêm người dùng vào gói này"
+
+#: custom/admin.php:426
+msgid "Add user to package"
+msgstr "Thêm người dùng vào gói"
+
+#: custom/admin.php:431
+msgid "Enter user ID or email or user login:"
+msgstr "Nhập ID người dùng hoặc địa chỉ email hoặc tên tài khoản:"
+
+#: custom/admin.php:438
+msgid "Remove user from this package."
+msgstr "Xóa người dùng ra khỏi gói."
+
+#: custom/admin.php:444
+msgid "Expire in:"
+msgstr "Hết hạn trong:"
+
+#: custom/admin.php:451 custom/upgrade-vip.php:527
+msgid "VIP Package:"
+msgstr "Gói VIP:"
+
+#: custom/admin.php:462
+msgid "Cancel"
+msgstr "Hủy"
+
+#: custom/admin.php:502
+msgid "VIP Price for 6 months"
+msgstr "Giá VIP cho 6 tháng"
+
+#: custom/admin.php:503
+msgid "VIP Price for 12 months"
+msgstr "Giá VIP cho 12 tháng"
+
+#: custom/admin.php:504
+msgid "Super VIP Price for 6 months"
+msgstr "Giá Super VIP cho 6 tháng"
+
+#: custom/admin.php:505
+msgid "Super VIP Price for 12 months"
+msgstr "Giá Super VIP cho 12 tháng"
+
+#: custom/admin.php:550
+msgid "Expired In"
+msgstr "Hết hạn trong"
+
+#: custom/ajax.php:12
+msgid "Cannot find user."
+msgstr "Không thể tìm thấy người dùng."
+
+#: custom/ajax.php:76 custom/upgrade-vip.php:420
+#, php-format
+msgid "You have upgraded %s successfully"
+msgstr "Bạn vừa mới nâng cấp %s thành công"
+
+#: custom/ajax.php:78
+#, php-format
+msgid ""
+"You have upgraded %s successfully for package %s on %s. Now you can <a href="
+"\"%s\">visit dashboard</a> and create new post."
+msgstr ""
+"Bạn vừa mới nâng cấp %s thành công cho gói %s trên %s. Bây giờ bạn có thể <a "
+"href=\"%s\">truy cập vào bảng điều khiển</a> để tạo bài viết mới."
+
+#: custom/class-hocwp-aap-controller.php:13
+#, php-format
+msgid "%s is a singleton class and you cannot create a second instance."
+msgstr "%s là class dùng một lần và bạn không thể tạo mới đối tượng này."
+
+#: custom/class-hocwp-aap-vip-expirations-list-table.php:88
+msgid "Username"
+msgstr "Tài khoản"
+
+#: custom/class-hocwp-aap-vip-expirations-list-table.php:89
+msgid "Email"
+msgstr "Email"
+
+#: custom/class-hocwp-aap-vip-expirations-list-table.php:90
+msgid "Expire Date"
+msgstr "Ngày hết hạn"
+
+#: custom/functions.php:64
+#, php-format
+msgid ""
+"<strong>Error:</strong> Post content length must be greater than or equal %s "
+"chars."
+msgstr ""
+"<strong>Lỗi:</strong> Độ dài nội dung bài viết phải nhiều hơn hoặc bằng %s "
+"ký tự."
+
+#: custom/functions.php:160
+msgid "Are you sure you want to delete?"
+msgstr "Bạn có chắc là muốn xóa?"
+
+#: custom/functions.php:176
+msgid "Please provide a valid package ID."
+msgstr "Xin vui lòng cung cấp đúng ID gói."
+
+#: custom/functions.php:201
+msgid "User has not been added to this package yet."
+msgstr "Tài khoản chưa được thêm vào gói này."
+
+#: custom/functions.php:226
+msgid "Remove user from package successfully."
+msgstr "Xóa người dùng khỏi gói thành công."
+
+#: custom/functions.php:228
+msgid "Add user to package successfully."
+msgstr "Thêm người dùng vào gói thành công."
+
+#: custom/functions.php:230
+msgid "Change VIP user expiry day successfully."
+msgstr "Thay đổi ngày hết hạn VIP của người dùng thành công."
+
+#: custom/functions.php:256
+msgid "Cannot remove user from this package."
+msgstr "Không thể xóa người dùng ra khỏi gói."
+
+#: custom/functions.php:258
+msgid "Cannot add user to this package."
+msgstr "Không thể thêm người dùng vào gói này."
+
+#: custom/functions.php:260
+msgid "Cannot change VIP user expiry day."
+msgstr "Không thể thay đổi ngày hết hạn tài khoản VIP."
+
+#: custom/functions.php:266
+msgid "User has already added to this package."
+msgstr "Tài khoản đã được thêm vào gói này."
+
+#: custom/meta.php:11
+msgid "Package Information"
+msgstr "Thông tin gói"
+
+#: custom/meta.php:26
+msgid "VIP Price 6 months:"
+msgstr "Giá VIP cho 6 tháng:"
+
+#: custom/meta.php:31 custom/meta.php:51
+msgctxt "vip price"
+msgid "VNĐ for 6 months."
+msgstr "VNĐ cho 6 tháng."
+
+#: custom/meta.php:36
+msgid "VIP Price 12 months:"
+msgstr "Giá VIP cho 12 tháng:"
+
+#: custom/meta.php:41 custom/meta.php:61
+msgctxt "vip price"
+msgid "VNĐ for 12 months."
+msgstr "VNĐ cho 12 tháng."
+
+#: custom/meta.php:46
+msgid "Super VIP Price 6 months:"
+msgstr "Giá Super VIP cho 6 tháng:"
+
+#: custom/meta.php:56
+msgid "Super VIP Price 12 months:"
+msgstr "Giá Super VIP cho 12 tháng:"
+
+#: custom/post-type-and-taxonomy.php:14
+msgctxt "post package"
+msgid "Package"
+msgstr "Gói"
+
+#: custom/post-type-and-taxonomy.php:28
+msgctxt "post order"
+msgid "Orders"
+msgstr "Đơn hàng"
+
+#: custom/post-type-and-taxonomy.php:29
+msgctxt "post order"
+msgid "Order"
+msgstr "Đơn hàng"
+
+#: custom/post-type-and-taxonomy.php:43
+msgctxt "post transaction"
+msgid "Transactions"
+msgstr "Giao dịch"
+
+#: custom/post-type-and-taxonomy.php:44
+msgctxt "post transaction"
+msgid "Transaction"
+msgstr "Giao dịch"
+
+#: custom/post-type-and-taxonomy.php:59
+msgctxt "post type auto post"
+msgid "Post"
+msgstr "Bài viết"
+
+#: custom/post-type-and-taxonomy.php:75
+msgctxt "website auto post"
+msgid "Site"
+msgstr "Trang web"
+
+#: custom/upgrade-vip.php:54 custom/upgrade-vip.php:96
+msgid "VIP for 6 months"
+msgstr "VIP cho 6 tháng"
+
+#: custom/upgrade-vip.php:64 custom/upgrade-vip.php:106
+msgid "VIP for 12 months"
+msgstr "VIP cho 12 tháng"
+
+#: custom/upgrade-vip.php:76 custom/upgrade-vip.php:116
+msgid "Super VIP for 6 months"
+msgstr "Super VIP cho 6 tháng"
+
+#: custom/upgrade-vip.php:86 custom/upgrade-vip.php:126
+msgid "Super VIP for 12 months"
+msgstr "Super VIP cho 12 tháng"
+
+#: custom/upgrade-vip.php:175
+msgid "All Packages"
+msgstr "Tất cả các gói"
+
+#: custom/upgrade-vip.php:252
+#, php-format
+msgid "Upgrade VIP package %s in %d days."
+msgstr "Nâng cấp gói VIP %s trong %d ngày."
+
+#: custom/upgrade-vip.php:283
+#, php-format
+msgid "You have requested to upgrade %s package"
+msgstr "Bạn vừa mới yêu cầu nâng cấp gói %s"
+
+#: custom/upgrade-vip.php:288
+#, php-format
+msgid ""
+"You have requested to upgrade %s package on %s. Now you can send us payment "
+"via banks below:"
+msgstr ""
+"Bạn vừa mới yêu cầu nâng cấp gói %s trên %s. Bây giờ bạn có thể gửi thanh "
+"toán cho chúng tôi thông qua các tài khoản ngân hàng bên dưới:"
+
+#: custom/upgrade-vip.php:292
+msgid "Your order detail is descripted below:"
+msgstr "Thông tin chi tiết đơn hàng của bạn được mô tả bên dưới:"
+
+#: custom/upgrade-vip.php:296
+#, php-format
+msgid "Username: %s"
+msgstr "Tài khoản: %s"
+
+#: custom/upgrade-vip.php:297
+#, php-format
+msgid "Email: %s"
+msgstr "Địa chỉ email: %s"
+
+#: custom/upgrade-vip.php:298
+#, php-format
+msgid "Package name: %s"
+msgstr "Tên gói: %s"
+
+#: custom/upgrade-vip.php:299
+#, php-format
+msgid "Package description: %s"
+msgstr "Mô tả gói: %s"
+
+#: custom/upgrade-vip.php:300
+#, php-format
+msgid "Total: %s"
+msgstr "Tổng cộng: %s"
+
+#: custom/upgrade-vip.php:307
+#, php-format
+msgid "You get new order for %s package"
+msgstr "Bạn đã có đơn đặt hàng mới cho gói %s"
+
+#: custom/upgrade-vip.php:308
+#, php-format
+msgid ""
+"Someone has ordered %s package on %s. Please check and contact them for "
+"payment."
+msgstr ""
+"Đã có người đặt hàng gói %s trên %s. Xin vui lòng kiểm tra và liên hệ họ để "
+"thanh toán."
+
+#: custom/upgrade-vip.php:317
+msgid "Your order has been saved. Please check your email."
+msgstr "Hóa đơn của bạn đã được lưu. Xin vui lòng kiểm tra hộp thư."
+
+#: custom/upgrade-vip.php:322 custom/upgrade-vip.php:461
+msgid "There was an error, please try again."
+msgstr "Đã có lỗi xảy ra, xin vui lòng thử lại."
+
+#: custom/upgrade-vip.php:337
+msgid "Cannot create order!"
+msgstr "Không thể tạo hóa đơn!"
+
+#: custom/upgrade-vip.php:422
+#, php-format
+msgid ""
+"You have upgraded %s successfully on %s. Now you can <a href=\"%s\">visit "
+"dashboard</a> and create new post."
+msgstr ""
+"Bạn vừa mới nâng cấp %s thành công trên %s. Bây giờ bạn có thể <a href=\"%s"
+"\">truy cập vào bảng điều khiển</a> và đăng bài viết mới."
+
+#: custom/upgrade-vip.php:453
+msgid "Thank you! You have upgraded to VIP account successfully!"
+msgstr "Cảm ơn bạn! Bạn vừa mới nâng cấp tài khoản VIP thành công!"
+
+#: custom/upgrade-vip.php:477
+msgid "Upgrade to VIP account"
+msgstr "Nâng cấp lên tài khoản VIP"
+
+#: custom/upgrade-vip.php:496
+msgid "Go to Dashboard"
+msgstr "Đi đến bảng điều khiển"
+
+#: custom/upgrade-vip.php:522
+msgid "Package Name:"
+msgstr "Tên gói:"
+
+#: custom/upgrade-vip.php:557
+msgid "Total:"
+msgstr "Tổng cộng:"
+
+#: custom/upgrade-vip.php:559
+msgctxt "currency"
+msgid "VNĐ"
+msgstr "VNĐ"
+
+#: custom/upgrade-vip.php:567
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#: custom/upgrade-vip.php:571
+msgid "Upgrade"
+msgstr "Nâng cấp"
+
+#: custom/upgrade-vip.php:578
+msgid "Back"
+msgstr "Quay lại"
+
+#: main.php:40
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: main.php:42
+msgid "Auto Add Post by HocWP Team"
+msgstr "Tự động tạo bài viết bởi HocWP Team"
+
+#: main.php:43
+msgid "Auto Add Post"
+msgstr "Tạo bài viết tự động"
+
+#: main.php:47
+msgid "Notify plugin license"
+msgstr "Thông báo bản quyền plugin"
+
+#: main.php:49
+msgid "Your plugin is blocked."
+msgstr "Plugin của bạn đã bị khóa."
+
+#: main.php:50
+msgid "Plugin Invalid License"
+msgstr "Bản quyền của plugin không đúng"
+
+#: main.php:88
+msgid ""
+"Please configure Ngan Luong payment gateway for checkout with this service."
+msgstr ""
+"Xin vui lòng thiết lập cổng thanh toán Ngân Lượng để thanh toán dịch vụ này."
+
+#: main.php:98
+msgid "API Key"
+msgstr "Mã API"
+
+#: main.php:108
+msgid "Post Word Count"
+msgstr "Đếm số từ bài viết"
+
+#: main.php:118
+msgid "Word Count Error"
+msgstr "Thông báo lỗi đếm số từ"
+
+#: main.php:125
+msgid "Upgrade all VIP packages for 6 months."
+msgstr "Nâng cấp tất cả gói VIP cho 6 tháng."
+
+#: main.php:128
+msgid "VIP Price 6 months"
+msgstr "Chi phí VIP 6 tháng"
+
+#: main.php:133
+msgid "Upgrade all VIP packages for 12 months."
+msgstr "Nâng cấp tất cả gói VIP cho 12 tháng."
+
+#: main.php:135
+msgid "VIP Price 12 months"
+msgstr "Chi phí VIP 12 tháng"
+
+#: main.php:140
+msgid "Upgrade all Super VIP packages for 6 months."
+msgstr "Nâng cấp tất cả các gói Super VIP cho 6 tháng."
+
+#: main.php:142
+msgid "Super VIP Price 6 months"
+msgstr "Chi phí nâng cấp Super VIP cho 6 tháng"
+
+#: main.php:147
+msgid "Upgrade all Super VIP packages for 12 months."
+msgstr "Nâng cấp tất cả các gói Super VIP cho 12 tháng."
+
+#: main.php:149
+msgid "Super VIP Price 12 months"
+msgstr "Chi phí nâng cấp Super VIP cho 12 tháng"
+
+#: main.php:158
+msgid "Ngan Luong Gateway"
+msgstr "Cổng thanh toán Ngân Lượng"
+
+#: main.php:163
+msgid "Receiver"
+msgstr "Người nhận"
+
+#: main.php:168
+msgid "Merchant ID"
+msgstr "ID người bán"
+
+#: main.php:173
+msgid "Merchant Pass"
+msgstr "Mã người bán"
+
+#: main.php:178
+msgid "Banks Info"
+msgstr "Thông tin ngân hàng"
+
+#: main.php:183
+msgid "Upgrade Notices"
+msgstr "Thông báo nâng cấp"
+
+#: main.php:202
+msgid "Post Type"
+msgstr "Kiểu bài viết"
+
+#~ msgid "General Settings"
+#~ msgstr "Cài đặt chung"
+
+#~ msgid "Once Secondly"
+#~ msgstr "Mỗi giây một lần"
+
+#~ msgid "Time Interval:"
+#~ msgstr "Khoảng thời gian:"
+
+#~ msgid "seconds"
+#~ msgstr "Giây"
+
+#~ msgid "Auto Reply:"
+#~ msgstr "Tự động trả lời:"
+
+#~ msgid "Time Interval"
+#~ msgstr "Khoảng thời gian"
+
+#~ msgid "Auto Reply"
+#~ msgstr "Tự động trả lời"
