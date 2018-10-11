@@ -1,0 +1,1590 @@
+body {
+    background-color: #fff;
+}
+
+html, body {
+    color: #444;
+    font-family: "Lucida Grande", Helvetica, Arial, "Arial Unicode", sans-serif;
+    font-size: 12px;
+}
+
+body.v2 {
+    background: #fff url("../images/bg.gif") repeat-x scroll center top;
+}
+
+body.v2 > .site {
+    background: rgba(0, 0, 0, 0) url("../images/bg2.jpg") no-repeat scroll 50% top;
+}
+
+.v2 .container {
+    width: 95%;
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.menu-search {
+    background-color: #eeeeee;
+    border: 1px solid #000;
+    color: #ccc;
+    font-size: 13px;
+    height: 43px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.v2 .menu-search {
+    border-color: #e6e6e6;
+}
+
+.v2 .menu-search {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0); /* IE6-9 */
+}
+
+.primary-menus .sf-menu:not(.hocwp-mobile-menu) li:hover,
+.primary-menus .sf-menu:not(.hocwp-mobile-menu) li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+    margin-top: 13px;
+    padding-right: 10px;
+}
+
+.primary-menus li a {
+    border: medium none;
+    color: #000;
+    font-weight: 700;
+    line-height: 13px;
+    padding: 0;
+}
+
+.primary-menus li:last-child {
+    border-right: medium none;
+}
+
+.primary-menus li a:hover {
+    text-decoration: underline;
+}
+
+.primary-menus .sub-menu {
+    display: none;
+}
+
+.menu-search .search .search-form {
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.menu-search .search .search-form .search-field {
+    border: 1px solid #000;
+    color: #000;
+    font-size: 13px;
+    height: 25px;
+    line-height: 25px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.v2 .menu-search .search .search-form .search-field {
+    border-color: #e6e6e6;
+}
+
+.menu-search .search .search-form .search-submit {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 11px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 10px;
+    padding: 0 10px;
+    width: auto;
+}
+
+.v2 .menu-search .search .search-form .search-submit {
+    border-color: #e6e6e6;
+}
+
+.menu-search .search .search-form label {
+    border: medium none;
+    margin: 0;
+    width: auto;
+}
+
+.gray-box,
+.module.search-cats {
+    background-color: #eee;
+    border: 1px solid #000;
+    padding: 12px;
+}
+
+.v2 .site-footer .widget,
+.v2 .gray-box,
+.v2 .module.search-cats {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f2f2+0,ffffff+100 */
+    background: #f2f2f2; /* Old browsers */
+    background: -moz-linear-gradient(top, #f2f2f2 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f2f2f2 0%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f2f2f2 0%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+}
+
+.v2 .site-footer .widget,
+.v2 .gray-box,
+.v2 .module.search-cats {
+    border-color: #e6e6e6;
+}
+
+.v2 .site-footer .widget {
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+}
+
+.v2 .site-footer .widget .widget-title {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.v2 .site-footer .widget .widget-title + * {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    padding: 0;
+}
+
+.module.search-cats .alphabe {
+    margin-bottom: 12px;
+}
+
+.module.search-cats .alphabe span {
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.module.search-cats .alphabe a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.hover-link {
+    padding: 2px 5px;
+}
+
+a.hover-link:hover,
+.module.search-cats .alphabe a:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.module.search-cats .cat-cols > * {
+    float: left;
+    width: 11.11%;
+}
+
+.module.search-cats .cat-cols a {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.module.notices p:last-child {
+    margin-bottom: 0;
+}
+
+.module.notices {
+    font-size: 12px;
+}
+
+.site-content .module {
+    margin-top: 15px;
+}
+
+.font-box {
+
+}
+
+.font-box .top-info {
+    background-color: #eee;
+    border: 1px solid #000;
+    color: #979797;
+    font-size: 13px;
+    padding: 6px;
+}
+
+.v2 .font-box .top-info {
+    border-color: #e6e6e6;
+}
+
+.v2 .font-box .top-info {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
+    background: #fcfff4; /* Old browsers */
+    background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#b3bead', GradientType=0); /* IE6-9 */
+}
+
+.font-box .top-info a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.font-box .top-info .name-author a {
+
+}
+
+.font-box .top-info a:hover {
+    text-decoration: underline;
+}
+
+.font-box .top-info .cats a {
+    color: #888;
+}
+
+.font-box .demo {
+    border-color: #000;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: 22px 10px 5px 24px;
+}
+
+.v2 .font-box .demo {
+    border-color: #e6e6e6;
+}
+
+.font-box .demo .custom-text {
+    max-width: 99%;
+}
+
+.font-box .font-name {
+    font-size: 100px;
+    line-height: 1;
+    margin: 0;
+}
+
+.font-box .btn-download {
+    background: #000 none repeat scroll 0 0;
+    border: 1px solid #000;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    padding: 6px 11px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.v2 .font-box .btn-download {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+    background: #feccb1; /* Old browsers */
+    background: -moz-linear-gradient(top, #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feccb1', endColorstr='#fb955e', GradientType=0); /* IE6-9 */
+}
+
+.font-box .btn-download:hover {
+    opacity: 0.8;
+}
+
+.font-box .links > * {
+    margin-bottom: 5px;
+}
+
+.btn-light {
+    background-color: #fff;
+    border: 1px solid #686868;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: normal;
+    margin-right: 0;
+    margin-top: 5px;
+    padding: 4px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+form[name="donate_form"] input[type="submit"] {
+    width: 100%;
+}
+
+form[name="donate_form"] input[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+.btn-dark {
+    background: #000 none repeat scroll 0 0;
+    border: 1px solid #000;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+.font-box .button {
+    display: block;
+}
+
+.font-box .license {
+    font-size: 12px;
+}
+
+.font-box .links {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.font-box .demo {
+    position: relative;
+}
+
+.font-box .demo .link-inner {
+    background-color: #fff;
+    width: auto;
+    float: right;
+}
+
+.font-box .links .link-inner > * {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.font-box .links .link-inner > * input[type="submit"],
+.font-box .links .link-inner > * a {
+    padding: 6px 10px;
+    margin-top: 0;
+    line-height: 17px;
+}
+
+.font-box .links .link-inner > *:empty {
+    display: none;
+}
+
+.menu-search-area .container.wrap,
+.logo-area .container.wrap,
+.site-footer .container.wrap,
+.site-content .container.wrap {
+    background-color: #fff;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    padding: 0 35px;
+}
+
+.sortFilterForm {
+    margin-top: 15px;
+    padding: 0 0 16px;
+}
+
+.sortFilterForm label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.sortFilterForm .wp-picker-input-wrap > label {
+    display: inline-block;
+}
+
+.sortFilterForm .wp-picker-input-wrap > input.button {
+    height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hocwp.v2 .custom-preview-form input[type="reset"], .hocwp.v2 .custom-preview-form input[type="submit"] {
+    border-width: 1px;
+}
+
+.sortFilterForm .elementWrapper {
+    display: inline-block;
+    padding-right: 8px;
+    vertical-align: top;
+}
+
+.custom-preview-form .wp-color-result-text {
+    margin-right: 1px;
+    line-height: 26px;
+}
+
+.custom-preview-form .wp-picker-container .wp-color-result.button {
+    height: 28px;
+}
+
+.custom-preview-form button.wp-color-result {
+    border: medium none;
+}
+
+.wp-picker-container input[type=text].wp-color-picker {
+    padding: 4px;
+    text-align: center;
+    height: 28px;
+}
+
+.sortFilterForm #customPreviewText {
+    width: 180px;
+}
+
+.single .container .sortFilterForm {
+    padding-bottom: 0;
+}
+
+.more-font-demo .file-name {
+    background-color: #e3e3e3;
+    padding: 2px;
+}
+
+.more-font-demo .font-name {
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.more-font-demo .demo .font-name {
+    display: none;
+}
+
+.more-font-demo .demo-text .font-name {
+    display: block;
+}
+
+.more-font-demo .demo.preview {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-top: 2px;
+    min-height: 80px;
+}
+
+.hocwp .three-column .sidebar, .hocwp .site-content .sidebar {
+    margin-top: 10px;
+    width: 300px;
+}
+
+.hocwp .site-content .content-area {
+    width: calc(100% - 320px);
+}
+
+.fonts-box .no-results {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.pagination {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.hocwp .pagination .item {
+    background-color: #000;
+    border: 1px solid #000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.hocwp .pagination .item.current-item {
+
+}
+
+.hocwp .pagination .item.current-item,
+.hocwp .pagination .item.link-item:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+}
+
+.hocwp .wp-color-result {
+    margin-bottom: 0;
+    height: 24px;
+}
+
+.loops .font-box {
+    margin-bottom: 20px;
+}
+
+.hocwp .custom-preview-form input[type="text"]:not(.wp-color-picker),
+.hocwp .custom-preview-form select {
+    font-size: 13px;
+    height: 28px;
+    width: 100%;
+}
+
+.hocwp .custom-preview-form input[type="reset"],
+.hocwp .custom-preview-form input[type="submit"] {
+    height: 28px;
+}
+
+.hocwp.v2 .custom-preview-form input[type="reset"],
+.hocwp.v2 .custom-preview-form input[type="submit"] {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9dd53a+0,a1d54f+50,80c217+51,7cbc0a+100;Green+Gloss+%231 */
+    background: #9dd53a; /* Old browsers */
+    background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=0); /* IE6-9 */
+}
+
+.hocwp.v2 .custom-preview-form input[type="reset"],
+.hocwp.v2 .custom-preview-form input[type="submit"] {
+    color: #fff;
+}
+
+.hocwp.v2 .custom-preview-form input[type="reset"]:hover,
+.hocwp.v2 .custom-preview-form input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.wp-picker-holder {
+    position: absolute;
+    z-index: 9999;
+}
+
+.submitFontForm {
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+.submitFontForm label {
+    clear: left;
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px;
+    width: 200px;
+}
+
+.submitFontForm div {
+    clear: right;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.submitFontForm input, .submitFontForm select, .submitFontForm textarea {
+    width: 400px;
+}
+
+.submitFontForm textarea {
+    height: 100px;
+}
+
+.submitFontForm .submitButton {
+    width: 120px;
+}
+
+.page-template-designers .site-content .chars {
+    margin-bottom: 10px;
+}
+
+.page-template-designers .site-content .chars a {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-right: 1px;
+    padding: 3px 6px;
+    text-decoration: none;
+}
+
+.page-template-designers .site-content .chars a:hover,
+.page-template-designers .site-content .chars a.current {
+    background-color: #fff;
+    color: #000;
+}
+
+.page-template-designers .site-content .chars a.current {
+    border-color: #fff;
+}
+
+.site-footer .addthis-tools {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.hocwp .site-footer > .container {
+    padding-top: 20px;
+}
+
+.fontArchiveContents {
+    float: left;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.fontArchiveContents table {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+.fontArchiveContents th, .fontArchiveContents td {
+    border-bottom: 1px solid #000000;
+    padding: 7px;
+}
+
+.fontArchiveContents th {
+    background-color: #eeeeee;
+    color: #666;
+    text-align: left;
+}
+
+.fontArchiveContents tr:hover {
+    background-color: #efefef;
+}
+
+.fontArchiveContents a {
+    text-decoration: none;
+}
+
+.fontArchiveContents a:hover {
+    text-decoration: underline;
+}
+
+.fontDesigner {
+    padding-bottom: 14px;
+}
+
+.fontDesigner table {
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+.fontDesigner td {
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    padding: 7px;
+}
+
+.fontDesigner td:first-child {
+    background-color: #eeeeee;
+    width: 200px;
+}
+
+.fontDesigner a {
+    text-decoration: underline;
+}
+
+.fontDesigner a:hover {
+    text-decoration: none;
+}
+
+.hocwp-post .post-group > h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.site-branding {
+    float: left;
+}
+
+.hocwp-ads.leaderboard {
+    margin-top: 5px;
+}
+
+.hocwp-ads.below-notices {
+    margin-top: 15px;
+}
+
+.hocwp-ads.site-footer {
+    margin-bottom: 15px;
+}
+
+.v2 .font-box .demo .font-name {
+
+}
+
+.v2 .font-box .demo.demo-text .font-name {
+
+}
+
+.font-box .demo .font-name a {
+    text-decoration: none;
+}
+
+.font-box .demo:not(.demo-text) .font-name a {
+    color: transparent;
+}
+
+.v2 .font-box .demo {
+    background-color: rgba(0, 0, 0, 0);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.font-box .demo .font-name a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.site-footer .alphabe {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.site-footer .recent-searches span,
+.site-footer .alphabe span {
+    font-weight: 700;
+}
+
+.site-footer .alphabe a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-footer .recent-searches a {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #444;
+    margin: 5px;
+    padding: 3px 4px;
+    text-decoration: none;
+}
+
+.site-footer .recent-searches {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.site-footer .recent-searches a:hover {
+    border: 1px solid #aaa;
+    color: #000;
+}
+
+.footer-menus {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-menus .sub-menu {
+    display: none;
+}
+
+.footer-menus li:hover,
+.footer-menus li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-right: 1px solid #000;
+    display: inline-block;
+    float: none;
+    margin-right: 8px;
+    padding-right: 8px;
+}
+
+.footer-menus li a {
+    color: #000;
+    display: block;
+    line-height: 14px;
+    padding: 0;
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+.footer-menus li:last-child {
+    border-right: medium none;
+}
+
+.footer-menus ul {
+    width: 100%;
+}
+
+.footer-menus li a:hover {
+    text-decoration: none;
+}
+
+.site-footer .widget {
+    float: left;
+    margin-right: 15px;
+    width: 32.33%;
+}
+
+.site-footer .widget:nth-child(3n) {
+    margin-right: 0;
+}
+
+.site-footer .widget-area {
+    margin-top: 15px;
+}
+
+.v3 .container {
+    width: 100%;
+}
+
+.header-bar {
+    background: #8E151E;
+    margin: 0;
+}
+
+.menu-search-area .container.wrap, .logo-area .container.wrap, .site-footer .container.wrap, .site-content .container.wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: none;
+    border-right: none;
+}
+
+.header-bar .container.wrap {
+    background: none;
+}
+
+.v3 .header-bar .hocwp-ads {
+    display: none;
+}
+
+.v3 .site-header .site-title {
+    margin: 0;
+}
+
+.v3 .menu-search-area {
+    display: none;
+}
+
+.v3 .site-title img {
+    max-height: 60px;
+}
+
+.bread-text {
+    text-align: left;
+    background: #DFDFDF;
+    font-size: 14px;
+    line-height: 1.2em;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.bread-text a {
+    color: #8E151E;
+    text-decoration: none;
+    padding: 0.1em 0.2em;
+    border-radius: .3em;
+    margin: -0.05em -0.15em;
+}
+
+.bread-text {
+    color: #404040;
+    clear: both;
+}
+
+.bread-text a:hover {
+    color: #FFF;
+    background-color: #9F131F;
+}
+
+.bread-text .divider {
+    margin: 0 .5em;
+}
+
+.bread-text p {
+    margin: 0;
+}
+
+.header-bar fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-bar .search-box .search-form {
+    background-color: #FFF;
+    margin: 17px 18px 0 0;
+    padding: 1px 22px 2px 8px;
+    line-height: 24px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.v3 .site-branding {
+    margin-right: 25px;
+}
+
+.header-bar .search-box .search-field {
+    color: #9f9f9f;
+    font-size: 16px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    width: 200px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.header-bar .search-box input[type="image"] {
+    position: absolute;
+    bottom: auto;
+    width: 16px;
+    height: 16px;
+    right: 3px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.headerButton {
+    padding: 12px 15px 12px 40px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-image: url("../images/header24.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0;
+}
+
+.head-more ul {
+    list-style: none;
+    margin: 12px 0 0 0;
+    padding: 0;
+}
+
+.headerButton.categories {
+    background-position: 8px 8px;
+}
+
+.headerButton.register {
+    background: none;
+    padding-left: 15px;
+}
+
+.headerButton.register i {
+    font-size: 22px;
+    vertical-align: -1px;
+    margin-top: -4px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+#searchIcon {
+    display: none;
+}
+
+.head-more li {
+    display: block;
+    float: left;
+    color: #fff;
+    margin: 0 10px 0 5px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.head-more li > a {
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.head-more li a:link {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.headerButton.signIn {
+    background-position: 8px -67px;
+    padding: 12px 15px 12px 35px;
+}
+
+.hocwp .menu-widgets .widget li a:hover,
+.head-more li.active,
+.head-more li:hover,
+.headerButton.active,
+.headerButton:hover,
+.headerButton:active {
+    background-color: #B72532;
+}
+
+.head-more li.profile-item > a {
+    padding: 5px 12px;
+    display: block;
+    border-radius: 5px;
+}
+
+.head-more li.profile-item > .sub-menu {
+    position: absolute;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    top: 100%;
+}
+
+.head-more li.profile-item > .sub-menu {
+    border-top: none;
+    margin-top: 2px;
+    min-width: 200px;
+    display: none;
+}
+
+.head-more li.profile-item > .sub-menu {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.head-more li.profile-item:hover > .sub-menu {
+    display: block;
+}
+
+.head-more li.profile-item > .sub-menu li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.head-more li.profile-item > .sub-menu li a {
+    color: #333;
+    text-shadow: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+.head-more li.profile-item > .sub-menu li:hover,
+.head-more li.profile-item > .sub-menu li a:hover {
+    background: none;
+    border-radius: 0;
+}
+
+.head-more li.profile-item > .sub-menu li a:hover {
+    background-color: #c5505a;
+    color: #fff;
+}
+
+.head-more li.profile-item {
+    border-radius: 5px;
+    position: relative;
+}
+
+.headerButton.favorites {
+    background-position: 8px -140px
+}
+
+.headerButton.search {
+    background-position: 8px -214px
+}
+
+.head-more .avatar {
+    max-height: 20px;
+    width: auto;
+    margin-right: 5px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 0;
+}
+
+.head-more .profile-item {
+    padding: 4px 0;
+    font-size: 15px;
+}
+
+.menu-widgets {
+    clear: both;
+    background: #fff;
+}
+
+.menu-widgets .widget-title {
+    color: #444;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.menu-widgets .widget {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.menu-widgets {
+    display: flex;
+}
+
+.menu-widgets .col {
+    flex: 16.66% 0 0;
+    border-right: 1px dashed #dedede;
+}
+
+.hocwp .menu-widgets .widget .widget-title + *,
+.menu-widgets .widget-title + * {
+    padding: 0;
+    border: none;
+}
+
+.hocwp .menu-widgets .widget li {
+    display: inline-block;
+    border: none;
+    position: relative;
+    padding-right: 10px;
+    margin-bottom: 0;
+    vertical-align: top;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hocwp .menu-widgets .widget li a {
+    color: #C02631;
+    display: block;
+    text-decoration: none;
+    padding: 2px 3px;
+    border-radius: 4px;
+}
+
+.hocwp .menu-widgets .widget li a:hover {
+    color: #fff;
+}
+
+.hocwp .menu-widgets .widget li:after {
+    content: " · ";
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-weight: 700;
+}
+
+.hocwp .menu-widgets .widget li:last-child:after {
+    display: none;
+}
+
+.v3 .font-box .top-info {
+    background: #dfdfdf;
+}
+
+.v3 .sortFilterForm,
+.home.v3 .sortFilterForm {
+    display: none;
+}
+
+.v3 .breadcrumb {
+    margin: 0;
+    background: none;
+    padding: 0;
+}
+
+.v3 .font-box.has-images .links {
+    display: none;
+}
+
+.v3 .font-box.has-images .demo {
+    padding-top: 50px;
+    background-position: left 10px;
+}
+
+.v3 .font-box .font-thumbs {
+    display: flex;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.v3 .font-box .font-thumbs > * {
+    display: inline-block;
+    flex: 20% 0 0;
+    padding: 0 5px;
+}
+
+.v3 .font-box .font-thumbs > *:nth-child(n+6) {
+    display: none;
+}
+
+.v3 .font-box .font-thumbs img {
+    width: 100%;
+    height: 160px;
+    max-width: 293px;
+}
+
+.pxf-post-slider .slick-slide img {
+    height: 749px;
+}
+
+.v3 .pxf-post-slider .slider-for {
+    float: left;
+    width: calc(100% - 270px);
+}
+
+.v3 .pxf-post-slider .slider-nav {
+    width: 250px;
+    float: right;
+}
+
+.v3.single .current-post > .hocwp-post.font-box.has-images .demo {
+    display: none !important;
+}
+
+.v3.single .current-post.has-images .post-group > h2 {
+    display: none;
+}
+
+.v3.single .post-group.font > h2 {
+    display: block;
+}
+
+.v3.single .current-post .hocwp-post {
+    margin-bottom: 20px;
+}
+
+.v3 .fes-vendor-dashboard .your-products {
+    table-layout: auto;
+}
+
+.v3 .fes-vendor-dashboard .your-products tbody td,
+.v3 .fes-vendor-dashboard .your-products thead th {
+    border-bottom: 1px solid #dedede;
+}
+
+.v3 .fes-vendor-dashboard .your-products .thumbnail-container {
+    max-width: none;
+}
+
+.v3 .fes-vendor-dashboard .your-products .thumbnail-container img {
+    width: 100%;
+    max-height: none;
+    height: auto;
+}
+
+.v3 .fes-vendor-dashboard .your-products .title-col a {
+    text-decoration: none;
+}
+
+.v3 .fes-vendor-dashboard .your-products .title-col h3 {
+    color: #333;
+    text-decoration: none;
+}
+
+.v3 .fes-vendor-dashboard .your-products .title-col div a:hover {
+    text-decoration: underline;
+}
+
+.v3 .fes-vendor-dashboard .your-products tbody td .sidebar-license-info {
+    display: block;
+    margin-top: 10px;
+}
+
+.v3 input[type="submit"] {
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+}
+
+.v3.pixel-lostpass .pixelify-lostpassword,
+.v3.pixel-signup .register-box,
+.v3.pixel-signin .pixelify-login {
+    border: 1px solid #dedede;
+    padding-top: 20px;
+}
+
+.v3 .fonts-box .author-page-info-meta,
+.v3 .fonts-box .author-page-info {
+    margin-top: 20px;
+}
+
+.v3.pixel-lostpass .pixelify-lostpassword {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.primary-sidebar > .sidebar-download-button {
+    display: none;
+}
+
+@media only screen and (max-width: 1403px) {
+
+}
+
+@media only screen and (max-width: 1300px) {
+    .v3 .pxf-post-slider .slider-nav,
+    .v3 .pxf-post-slider .slider-for {
+        width: 100%;
+    }
+
+    .v3 .pxf-post-slider .slider-nav > img {
+        display: inline-block;
+        width: 20%;
+    }
+
+    .pxf-post-slider .slick-slide img {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1241px) and (max-width: 1600px) {
+    .v3 .font-box .font-thumbs img {
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .hocwp .three-column .sidebar, .hocwp .site-content .sidebar,
+    .hocwp .site-content .content-area {
+        width: 100%;
+    }
+
+    .v2 .container {
+        width: 100%;
+    }
+
+    .menu-search-area .container.wrap, .logo-area .container.wrap, .site-footer .container.wrap, .site-content .container.wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .hocwp .hocwp-mobile-menu.left + .mobile-menu-button, .hocwp .hocwp-mobile-menu.right + .mobile-menu-button,
+    .hocwp .primary-menus .mobile-menu-button {
+        color: #333;
+        height: 43px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .v2 .site-main .font-box .demo {
+        background-position: 20px 10px;
+    }
+
+    .v2 .site-main .font-box .demo {
+        padding-left: 10px;
+    }
+
+    .v2 .site-main .font-box .links {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .site-footer .widget {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .module.search-cats .cat-cols > * {
+        display: inline-block;
+        float: none;
+        margin-bottom: 10px;
+        vertical-align: top;
+        width: 33%;
+    }
+
+    .module.search-cats .alphabe span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .head-more li {
+        max-width: 40px;
+        overflow: hidden;
+    }
+
+    .head-more .avatar {
+        max-height: 24px;
+        height: 24px;
+        width: 24px;
+        max-width: 24px;
+    }
+
+    .head-more #searchIcon {
+        display: block;
+        width: auto;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .menu-widgets {
+        flex-wrap: wrap;
+    }
+
+    .menu-widgets .col {
+        flex: 33.33% 0 0;
+    }
+
+    #siteSearch {
+        display: none;
+        position: absolute;
+        top: 100%;
+        background: #333;
+        margin-top: 0;
+        padding: 5px 10px;
+    }
+
+    .search-active #siteSearch {
+        display: block;
+    }
+
+    .site-header .logo-area {
+        position: relative;
+    }
+
+    .header-bar .search-box input[type="image"] {
+        right: 12px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hocwp.v2 .custom-preview-form input[type="reset"], .hocwp.v2 .custom-preview-form input[type="submit"] {
+        margin-top: 10px;
+    }
+
+    .site-footer .widget {
+        width: 31.88%;
+    }
+
+    .v2 .font-box .demo {
+        background-position: 20px 10px;
+    }
+
+    .font-box .links {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .v3 .pxf-post-slider .slider-nav .slick-slide img {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+    .v3 .font-box .font-thumbs img {
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 740px) {
+    .site-footer .widget {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+}
+
+@media only screen and (max-width: 680px) {
+    .module.search-cats .cat-cols > * {
+        width: 32%;
+    }
+
+    .sortFilterForm .elementWrapper {
+        margin-bottom: 10px;
+    }
+
+    .post-group table .col-type {
+        display: none;
+    }
+
+    .breadcrumb-text,
+    .menu-search .search {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .font-box .demo .font-name a {
+        display: block;
+        font-size: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .v3 .pxf-post-slider .slider-nav .slick-slide img {
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 569px) and (max-width: 768px) {
+    .v3 .font-box .font-thumbs img {
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .hocwp .container.wrap {
+        padding: 0 5px;
+    }
+
+    .font-box .demo .link-inner {
+        width: 100%;
+    }
+
+    .font-box .links .link-inner > * {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .v3 .font-box .font-thumbs img {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 563px) {
+
+}
+
+@media only screen and (max-width: 549px) {
+
+}
+
+@media only screen and (max-width: 534px) {
+    .site-header .breadcrumb-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .v3 .pxf-post-slider .slider-nav .slick-slide img {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .post-group table .col-size {
+        display: none;
+    }
+
+    .v3 .font-box .font-thumbs img {
+        height: 30px;
+    }
+
+    .v3 .site-header .site-title {
+        max-width: 80px;
+        overflow: hidden;
+    }
+
+    .v3 .site-header .site-title img {
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+    .v3 .site-header .site-title {
+        max-width: 50px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+@media print {
+
+}
