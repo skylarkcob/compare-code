@@ -251,11 +251,13 @@ function hocwp_theme_custom_add_demo_from_file_contents( $post_id, $file_content
 				$filename      = basename( $file );
 				$file_url      = trailingslashit( $dir_info['url'] ) . $filename;
 				$attachment_id = hocwp_theme_custom_generate_media_id( $file, $file_url );
+
 				if ( ! is_wp_error( $attachment_id ) && hocwp_id_number_valid( $attachment_id ) ) {
-					$demo   = array(
+					$demo = array(
 						'id'  => $attachment_id,
 						'url' => $file_url
 					);
+
 					$result = $demo;
 					update_post_meta( $post_id, 'demo', $demo );
 
@@ -596,6 +598,32 @@ function hocwp_generate_font_character_map( $font_path, $font_size = 12, $chars 
 }
 
 function hocwp_generate_font_preview( $post_id, $t = '', $s = 80, $c = '000', $save = false, $font = '', $post_data = '' ) {
+	$att_key = $post_id;
+	$att_key .= $t;
+	$att_key .= $s;
+	$att_key .= $c;
+	$att_key .= $font;
+	$att_key .= maybe_serialize( $post_data );
+
+	$att_key = md5( $att_key );
+
+	$att_id = 0;
+
+	$query = hocwp_get_post_by_meta( 'att_key', $att_key, array( 'post_type' => 'attachment', 'fields' => 'ids' ) );
+
+	if ( $query->have_posts() ) {
+		$first  = array_shift( $query->posts );
+		$att_id = $first->ID;
+	}
+
+	if ( hocwp_id_number_valid( $att_id ) ) {
+		$obj = get_post( $att_id );
+
+		if ( $obj instanceof WP_Post && 'attachment' == $obj->post_type ) {
+			return $att_id;
+		}
+	}
+
 	if ( ! is_numeric( $s ) ) {
 		$s = 80;
 	}
@@ -636,6 +664,16 @@ function hocwp_generate_font_preview( $post_id, $t = '', $s = 80, $c = '000', $s
 
 	$post = get_post( $post_id );
 
+	if ( $post instanceof WP_Post ) {
+		if ( 'revision' == $post->post_type || 'inherit' == $post->post_type || 'auto-draft' == $post->post_status || 'trash' == $post->post_status || 'draft' == $post->post_status ) {
+			return false;
+		} elseif ( 'attachment' == $post->post_type ) {
+			return false;
+		}
+	}
+
+	HT_Custom()->check_post_meta_data( $post_id );
+
 	if ( hocwp_id_number_valid( $post_id ) ) {
 		if ( empty( $t ) ) {
 			$t = get_post_meta( $post_id, 'name', true );
@@ -664,7 +702,6 @@ function hocwp_generate_font_preview( $post_id, $t = '', $s = 80, $c = '000', $s
 		$file_id = $demo['id'];
 	}
 
-
 	$fontfile = hocwp_get_media_file_path( $file_id );
 
 	if ( ! empty( $font ) ) {
@@ -673,6 +710,10 @@ function hocwp_generate_font_preview( $post_id, $t = '', $s = 80, $c = '000', $s
 		if ( is_readable( $font ) ) {
 			$fontfile = $font;
 		}
+	}
+
+	if ( empty( $fontfile ) ) {
+		return false;
 	}
 
 	$info = wp_upload_dir();
@@ -684,13 +725,15 @@ function hocwp_generate_font_preview( $post_id, $t = '', $s = 80, $c = '000', $s
 
 	if ( ! empty( $font ) ) {
 		if ( $is_custom ) {
-			$file_name = sanitize_file_name( basename( $font ) ) . '-font-preview.png';
-			$dirname   = trailingslashit( dirname( $font ) );
-			$file      = $dirname . $file_name;
-			$sub       = substr( $dirname, strpos( $dirname, '/wp-content' ) );
-			$sub       = trim( $sub, '/' );
-			$url       = home_url( $sub );
-			$url       = trailingslashit( $url ) . $file_name;
+			$file_name = sanitize_file_name( basename( $font ) );
+			$file_name = rtrim( $file_name, '-' );
+			$file_name .= '-font-preview.png';
+			$dirname = trailingslashit( dirname( $font ) );
+			$file    = $dirname . $file_name;
+			$sub     = substr( $dirname, strpos( $dirname, '/wp-content' ) );
+			$sub     = trim( $sub, '/' );
+			$url     = home_url( $sub );
+			$url     = trailingslashit( $url ) . $file_name;
 
 			if ( is_readable( $file ) ) {
 				return $url;
@@ -737,11 +780,18 @@ function hocwp_generate_font_preview( $post_id, $t = '', $s = 80, $c = '000', $s
 	if ( $save ) {
 		$file_name = sanitize_title( $post->post_title );
 		$file_name .= '-' . sanitize_title( basename( $fontfile ) );
+		$file_name = rtrim( $file_name, '-' );
 		$file_name .= '-font-preview.png';
 		$file = trailingslashit( $info['path'] ) . $file_name;
 		imagepng( $im, $file, 9, PNG_NO_FILTER );
 
-		return hocwp_theme_custom_generate_media_id( $file, trailingslashit( $info['url'] ) . $file_name );
+		$att_id = hocwp_theme_custom_generate_media_id( $file, trailingslashit( $info['url'] ) . $file_name );
+
+		if ( hocwp_id_number_valid( $att_id ) ) {
+			update_post_meta( $att_id, 'att_key', $att_key );
+		}
+
+		return $att_id;
 	} else {
 		if ( ! empty( $font ) ) {
 			$prefix = sanitize_file_name( basename( $font ) );
@@ -750,6 +800,8 @@ function hocwp_generate_font_preview( $post_id, $t = '', $s = 80, $c = '000', $s
 				$prefix .= '-';
 				$prefix .= sanitize_file_name( md5( $t . $s . json_encode( $c ) ) );
 			}
+
+			$prefix = rtrim( $prefix, '-' );
 
 			$file_name = $prefix . '-font-preview.png';
 			$dirname   = trailingslashit( dirname( $font ) );
@@ -916,6 +968,56 @@ class HOCWP_Theme_Custom {
 
 			if ( hocwp_id_number_valid( $thumb_id ) && is_numeric( $size ) && 1 <= $size ) {
 				set_post_thumbnail( $post_id, $thumb_id );
+			}
+		}
+	}
+
+	public function check_post_meta_data( $post_id ) {
+		$font_demos = get_post_meta( $post_id, 'font_demos', true );
+
+		if ( empty( $font_demos ) ) {
+			$demo = get_post_meta( $post_id, 'demo', true );
+
+			if ( ! empty( $demo ) ) {
+				$demo = hocwp_sanitize_media_value( $demo );
+
+				if ( isset( $demo['url'] ) && ! empty( $demo['url'] ) ) {
+					$info = pathinfo( $demo['url'] );
+
+					$font_demos = array(
+						array(
+							'name' => $info['filename'],
+							'url'  => $demo['url'],
+							'id'   => isset( $demo['id'] ) ? $demo['id'] : ''
+						)
+					);
+
+					update_post_meta( $post_id, 'font_demos', $font_demos );
+				}
+			}
+		}
+
+		$download = get_post_meta( $post_id, 'download', true );
+
+		if ( ! hocwp_id_number_valid( $download ) ) {
+			$file_contents = get_post_meta( $post_id, 'file_contents', true );
+
+			if ( ! empty( $file_contents ) ) {
+				$file_contents = hocwp_sanitize_media_value( $file_contents );
+
+				if ( isset( $file_contents['id'] ) && hocwp_id_number_valid( $file_contents['id'] ) ) {
+					update_post_meta( $post_id, 'download', $file_contents['id'] );
+				}
+			} else {
+				$demo = get_post_meta( $post_id, 'demo', true );
+
+				if ( ! empty( $demo ) ) {
+					$demo = hocwp_sanitize_media_value( $demo );
+
+					if ( isset( $demo['id'] ) && ! empty( $demo['id'] ) && hocwp_id_number_valid( $demo['id'] ) ) {
+						update_post_meta( $post_id, 'download', $demo['id'] );
+					}
+				}
 			}
 		}
 	}

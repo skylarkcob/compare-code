@@ -1292,6 +1292,10 @@ form[name="donate_form"] input[type="submit"]:hover {
     display: none;
 }
 
+.home .content-area {
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 1403px) {
 
 }

@@ -674,7 +674,8 @@ function hocwp_get_post_by_meta( $key, $value, $args = array() ) {
 		'meta_key'       => $key,
 		'meta_value'     => $value
 	);
-	$args     = wp_parse_args( $args, $defaults );
+
+	$args = wp_parse_args( $args, $defaults );
 
 	return hocwp_query( $args );
 }

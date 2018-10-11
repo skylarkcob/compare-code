@@ -128,6 +128,8 @@ function hocwp_theme_custom_save_post_action( $post_id ) {
 	*/
 
 	do_action( 'hocwp_theme_save_post_data', $post_id );
+
+	HT_Custom()->check_post_meta_data( $post_id );
 }
 
 add_action( 'save_post', 'hocwp_theme_custom_save_post_action', 99 );
